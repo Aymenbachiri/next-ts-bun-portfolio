@@ -1,9 +1,11 @@
-import Navbar from "@/components/header/Navbar";
+import About from "@/components/About";
+import Body from "@/components/Body";
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-    </main>
+    <>
+      <Body />
+      <About />
+    </>
   );
 }

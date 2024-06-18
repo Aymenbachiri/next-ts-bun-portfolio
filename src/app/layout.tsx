@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
-import SmoothScrolling from "@/lib/providers/SmoothScrolling";
+import Navbar from "@/components/header/Navbar";
+import SmoothScrollingProvider from "@/lib/providers/SmoothScrollingProvider";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -21,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={raleway.className}>
-        <SmoothScrolling>{children}</SmoothScrolling>
+        <SmoothScrollingProvider>
+          <Navbar />
+          {children}
+        </SmoothScrollingProvider>
       </body>
     </html>
   );

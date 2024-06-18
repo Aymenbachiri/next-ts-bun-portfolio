@@ -1,28 +1,31 @@
 "use client";
 
 import { useNavigation } from "@/lib/hooks/useNavigation";
-import Link from "next/link";
+import ReusableLink from "../ui/ReusableLink";
 
 export default function LargeScreenNavList() {
   const { linkColor } = useNavigation();
   return (
     <nav>
-      <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-        <Link href="/#home">
+      <ul
+        style={{ color: `${linkColor}` }}
+        className="hidden md:flex text-black"
+      >
+        <ReusableLink href="#home">
           <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
-        </Link>
-        <Link href="/#about">
+        </ReusableLink>
+        <ReusableLink href="#about">
           <li className="ml-10 text-sm uppercase hover:border-b">About</li>
-        </Link>
-        <Link href="/#skills">
+        </ReusableLink>
+        <ReusableLink href="#skills">
           <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
-        </Link>
-        <Link href="/#projects">
+        </ReusableLink>
+        <ReusableLink href="#projects">
           <li className="ml-10 text-sm uppercase hover:border-b">Projects</li>
-        </Link>
-        <Link href="/#contact">
+        </ReusableLink>
+        <ReusableLink href="#contact">
           <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
-        </Link>
+        </ReusableLink>
       </ul>
     </nav>
   );

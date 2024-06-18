@@ -1,37 +1,40 @@
 "use client";
 
-import { useNavigation } from "@/lib/hooks/useNavigation";
-import Link from "next/link";
+import { Dispatch, SetStateAction } from "react";
+import ReusableLink from "../ui/ReusableLink";
 
-export default function MobileNavList() {
-  const { setNav } = useNavigation();
+export default function MobileNavList({
+  setNav,
+}: {
+  setNav: Dispatch<SetStateAction<boolean>>;
+}) {
   return (
-    <ul className="uppercase">
-      <Link href="/#home">
+    <ul className="uppercase text-black">
+      <ReusableLink href="/#home">
         <li onClick={() => setNav(false)} className="py-4 text-sm">
           Home
         </li>
-      </Link>
-      <Link href="/#about">
+      </ReusableLink>
+      <ReusableLink href="/#about">
         <li onClick={() => setNav(false)} className="py-4 text-sm">
           About
         </li>
-      </Link>
-      <Link href="/#skills">
+      </ReusableLink>
+      <ReusableLink href="/#skills">
         <li onClick={() => setNav(false)} className="py-4 text-sm">
           Skills
         </li>
-      </Link>
-      <Link href="/#projects">
+      </ReusableLink>
+      <ReusableLink href="/#projects">
         <li onClick={() => setNav(false)} className="py-4 text-sm">
           Projects
         </li>
-      </Link>
-      <Link href="/#contact">
+      </ReusableLink>
+      <ReusableLink href="/#contact">
         <li onClick={() => setNav(false)} className="py-4 text-sm">
           Contact
         </li>
-      </Link>
+      </ReusableLink>
     </ul>
   );
 }

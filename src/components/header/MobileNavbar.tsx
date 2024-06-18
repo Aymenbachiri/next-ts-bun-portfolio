@@ -9,7 +9,7 @@ import GithubIcon from "@/lib/svg/GithubIcon";
 import MenuBtn from "../ui/MenuBtn";
 
 export default function MobileNavbar() {
-  const { nav, handleNav } = useNavigation();
+  const { nav, handleNav, setNav } = useNavigation();
   return (
     <>
       <MenuBtn handleNav={handleNav} />
@@ -41,7 +41,7 @@ export default function MobileNavbar() {
               </div>
             </div>
             <nav className="py-4 flex flex-col">
-              <MobileNavList />
+              <MobileNavList setNav={setNav} />
               <div className="pt-40">
                 <p className="uppercase tracking-widest text-[#5651e5]">
                   Let&#39;s Connect
