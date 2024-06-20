@@ -1,10 +1,11 @@
-export default function LinkedInIcon() {
+export default function LinkedInIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="0.88em"
       height="1em"
       viewBox="0 0 448 512"
+      {...props}
     >
       <path
         fill="currentColor"

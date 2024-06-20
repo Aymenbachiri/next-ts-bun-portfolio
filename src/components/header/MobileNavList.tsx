@@ -10,27 +10,27 @@ export default function MobileNavList({
 }) {
   return (
     <ul className="uppercase text-black">
-      <ReusableLink href="/#home">
+      <ReusableLink href="#home">
         <li onClick={() => setNav(false)} className="py-4 text-sm">
           Home
         </li>
       </ReusableLink>
-      <ReusableLink href="/#about">
+      <ReusableLink href="#about">
         <li onClick={() => setNav(false)} className="py-4 text-sm">
           About
         </li>
       </ReusableLink>
-      <ReusableLink href="/#skills">
+      <ReusableLink href="#skills">
         <li onClick={() => setNav(false)} className="py-4 text-sm">
           Skills
         </li>
       </ReusableLink>
-      <ReusableLink href="/#projects">
+      <ReusableLink href="#projects">
         <li onClick={() => setNav(false)} className="py-4 text-sm">
           Projects
         </li>
       </ReusableLink>
-      <ReusableLink href="/#contact">
+      <ReusableLink href="#contact">
         <li onClick={() => setNav(false)} className="py-4 text-sm">
           Contact
         </li>

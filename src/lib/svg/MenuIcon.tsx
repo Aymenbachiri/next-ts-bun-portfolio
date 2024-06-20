@@ -1,4 +1,4 @@
-export default function MenuIcon() {
+export default function MenuIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +8,7 @@ export default function MenuIcon() {
       stroke="currentColor"
       width="1.5em"
       height="1.5em"
+      {...props}
     >
       <path
         strokeLinecap="round"
