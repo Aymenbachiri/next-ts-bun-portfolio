@@ -2,6 +2,7 @@
 
 import { useNavigation } from "@/lib/hooks/useNavigation";
 import ReusableLink from "../ui/ReusableLink";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function LargeScreenNavList() {
   const { linkColor } = useNavigation();
@@ -26,6 +27,7 @@ export default function LargeScreenNavList() {
         <ReusableLink href="#contact">
           <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
         </ReusableLink>
+        <ThemeSwitcher />
       </ul>
     </nav>
   );

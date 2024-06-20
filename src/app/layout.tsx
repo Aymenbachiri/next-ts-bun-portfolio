@@ -3,6 +3,7 @@ import { Raleway } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/header/Navbar";
 import SmoothScrollingProvider from "@/lib/providers/SmoothScrollingProvider";
+import { Providers } from "@/lib/providers/ThemeProvider";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -20,11 +21,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={raleway.className}>
         <SmoothScrollingProvider>
-          <Navbar />
-          {children}
+          <Providers>
+            <Navbar />
+            {children}
+          </Providers>
         </SmoothScrollingProvider>
       </body>
     </html>

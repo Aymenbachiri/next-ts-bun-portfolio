@@ -4,7 +4,7 @@ import img from "/public/assets/images/aymen-bachiri.webp";
 
 export default function About() {
   return (
-    <main id="about" className="w-full md:h-screen p-2 flex items-center py-16">
+    <main id="about" className="w-full h-full p-2 flex items-center mb-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <section className="col-span-2">
           <h1 className="uppercase text-xl text-center md:text-start tracking-widest text-[#5651e5]">

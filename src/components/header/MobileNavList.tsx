@@ -2,6 +2,7 @@
 
 import { Dispatch, SetStateAction } from "react";
 import ReusableLink from "../ui/ReusableLink";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function MobileNavList({
   setNav,
@@ -35,6 +36,7 @@ export default function MobileNavList({
           Contact
         </li>
       </ReusableLink>
+      <ThemeSwitcher />
     </ul>
   );
 }

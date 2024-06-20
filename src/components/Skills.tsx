@@ -1,9 +1,13 @@
 import { SkillsList } from "./SkillsList";
+import ReusableImage from "./ui/ReusableImage";
 
 export default function Skills() {
   return (
-    <main id="skills" className="w-full lg:h-screen p-2">
-      <section className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
+    <main
+      id="skills"
+      className="w-full lg:h-screen p-2 pt-[150px] lg:pt-[650px]"
+    >
+      <section className="max-w-[1240px] mx-auto h-full flex flex-col justify-center">
         <h1 className="text-xl tracking-widest uppercase text-[#5651e5]">
           Skills
         </h1>
@@ -16,7 +20,16 @@ export default function Skills() {
             >
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div className="m-auto">
-                  <skill.icon />
+                  {skill.image ? (
+                    <ReusableImage
+                      src={skill.image}
+                      alt={skill.name}
+                      width={64}
+                      height={64}
+                      loading="lazy"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  ) : null}
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>{skill.name}</h3>
