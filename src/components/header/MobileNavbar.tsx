@@ -7,12 +7,16 @@ import MobileNavList from "./MobileNavList";
 import LinkedInIcon from "@/lib/svg/LinkedInIcon";
 import GithubIcon from "@/lib/svg/GithubIcon";
 import MenuBtn from "../ui/MenuBtn";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function MobileNavbar() {
   const { nav, handleNav, setNav } = useNavigation();
   return (
     <>
       <MenuBtn handleNav={handleNav} />
+      <div className="absolute top-8 right-16 md:hidden">
+        <ThemeSwitcher />
+      </div>
       <section>
         <div
           className={
