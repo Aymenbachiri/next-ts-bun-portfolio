@@ -40,7 +40,7 @@ export default function About() {
             className="rounded-xl"
             alt="aymen bachiri image"
             loading="lazy"
-            sizes="(min-width: 1320px) 360px, (min-width: 780px) calc(30.58vw - 38px), (min-width: 540px) 450px, calc(90vw - 18px)"
+            sizes="(min-width: 480px) 450px, calc(93.75vw + 19px)"
           />
         </div>
       </div>

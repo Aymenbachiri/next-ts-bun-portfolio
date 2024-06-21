@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/header/Navbar";
 import SmoothScrollingProvider from "@/lib/providers/SmoothScrollingProvider";
 import { Providers } from "@/lib/providers/ThemeProvider";
+import { Toaster } from "react-hot-toast";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
           <Providers>
             <Navbar />
             {children}
+            <Toaster />
           </Providers>
         </SmoothScrollingProvider>
       </body>

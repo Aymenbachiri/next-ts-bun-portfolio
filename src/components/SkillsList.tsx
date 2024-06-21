@@ -95,6 +95,7 @@ export const SkillsList = [
     name: "MongoDB",
     image: "/assets/images/skills-images/mongodb-icon-2.svg",
   },
+  { id: 60, name: "Figma", image: "/assets/images/skills-images/figma.svg" },
   { id: 19, name: "Git", image: "/assets/images/skills-images/git.svg" },
   {
     id: 20,
@@ -162,7 +163,8 @@ export const SkillsList = [
   },
   {
     id: 39,
-    name: "react-toastify",
+    name: "react-hot-toast",
+    image: "/assets/images/skills-images/react-hot-toast.webp",
   },
   {
     id: 40,
