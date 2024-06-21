@@ -1,8 +1,8 @@
 import About from "@/components/About";
 import Body from "@/components/Body";
-import Contact from "@/components/Contact";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
+import Contact from "@/components/contact/Contact";
+import Projects from "@/components/projects/Projects";
+import Skills from "@/components/skills/Skills";
 
 export default function Home() {
   return (

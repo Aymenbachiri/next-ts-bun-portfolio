@@ -3,8 +3,7 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import SunIcon from "@/lib/svg/SunIcon";
-import MoonIcon from "@/lib/svg/MoonIcon";
+import { MoonIcon, SunIcon } from "@/lib/svg";
 
 export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
@@ -27,7 +26,7 @@ export default function ThemeSwitcher() {
   }
 
   return (
-    <div className="flex items-center ml-4 -mt-1">
+    <div className="flex items-center ml-4 -mt-1 shadow-lg shadow-gray-400 rounded-full">
       {resolvedTheme === "dark" ? (
         <SunIcon
           className="hover:cursor-pointer"

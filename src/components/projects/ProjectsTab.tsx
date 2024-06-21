@@ -11,6 +11,7 @@ const tabs = [
 
 export default function ProjectsTab() {
   const [activeTab, setActiveTab] = useState(tabs[0].name);
+
   return (
     <main>
       <div className="flex space-x-4 border-b-fit justify-center items-center">

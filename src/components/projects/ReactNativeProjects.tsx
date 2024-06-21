@@ -1,5 +1,5 @@
-import ReusableImage from "./ui/ReusableImage";
-import ReusableLink from "./ui/ReusableLink";
+import ReusableImage from "../ui/ReusableImage";
+import ReusableLink from "../ui/ReusableLink";
 
 export default function ReactNativeProjects() {
   return (

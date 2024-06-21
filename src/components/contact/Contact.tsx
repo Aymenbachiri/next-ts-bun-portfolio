@@ -1,14 +1,16 @@
-import ChevronDoubleUp from "@/lib/svg/ChevronDoubleUp";
 import ContactForm from "./ContactForm";
-import ReusableLink from "./ui/ReusableLink";
-import ResumeIcon from "@/lib/svg/ResumeIcon";
-import GithubIcon from "@/lib/svg/GithubIcon";
-import LinkedInIcon from "@/lib/svg/LinkedInIcon";
-import ReusableImage from "./ui/ReusableImage";
+import ReusableLink from "../ui/ReusableLink";
+import ReusableImage from "../ui/ReusableImage";
+import {
+  ChevronDoubleUp,
+  GithubIcon,
+  LinkedInIcon,
+  ResumeIcon,
+} from "@/lib/svg";
 
 export default function Contact() {
   return (
-    <main id="contact" className="w-full h-full pt-[10px] lg:pt-[750px]">
+    <main id="contact" className="w-full h-full lg:pt-[150px]">
       <div className="max-w-[1240px] m-auto px-2 w-full ">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
@@ -16,7 +18,7 @@ export default function Contact() {
         <h2 className="py-4">Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
-          <aside className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+          <aside className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 dark:border rounded-xl p-4">
             <div className="lg:p-4 h-full ">
               <div>
                 <ReusableImage
@@ -30,18 +32,26 @@ export default function Contact() {
               </div>
               <div>
                 <h2 className="py-2">Aymen Bachiri</h2>
-                <p>
-                  <strong>MERN</strong> Stack & <strong>React Native</strong>{" "}
+                <p className="dark:text-gray-500">
+                  <span className="font-bold dark:text-white">MERN</span> Stack
+                  &{" "}
+                  <span className="font-bold dark:text-white">
+                    React Native
+                  </span>{" "}
                   Developer
                 </p>
-                <p className="py-4">
-                  I am available for <strong>freelance</strong> or{" "}
-                  <strong>part-time</strong> positions. Contact me and
-                  let&apos;s talk.
+                <p className="py-4 dark:text-gray-500">
+                  I am available for{" "}
+                  <span className="font-bold dark:text-white">freelance</span>{" "}
+                  or{" "}
+                  <span className="font-bold dark:text-white">part-time</span>{" "}
+                  positions. Contact me and let&apos;s talk.
                 </p>
               </div>
               <nav>
-                <p className="uppercase pt-8">Connect With Me</p>
+                <p className="uppercase pt-8 dark:text-gray-500">
+                  Connect With Me
+                </p>
                 <ul className="flex items-center justify-between py-4">
                   <li>
                     <a
@@ -49,7 +59,7 @@ export default function Contact() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <div className="rounded-full dark:text-white shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <LinkedInIcon />
                       </div>
                     </a>
@@ -60,14 +70,14 @@ export default function Contact() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <div className="rounded-full dark:text-white shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <GithubIcon />
                       </div>
                     </a>
                   </li>
                   <li>
                     <a href="#" target="_blank" rel="noreferrer">
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <div className="rounded-full dark:text-white shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <ResumeIcon />
                       </div>
                     </a>

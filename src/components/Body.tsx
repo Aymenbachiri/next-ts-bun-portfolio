@@ -1,6 +1,4 @@
-import GithubIcon from "@/lib/svg/GithubIcon";
-import LinkedInIcon from "@/lib/svg/LinkedInIcon";
-import ResumeIcon from "@/lib/svg/ResumeIcon";
+import { GithubIcon, LinkedInIcon, ResumeIcon } from "@/lib/svg";
 
 export default function Body() {
   return (
@@ -29,7 +27,7 @@ export default function Body() {
                   href="https://www.linkedin.com/in/aymen-bachiri-9442b5287/"
                   target="_blank"
                   rel="noreferrer"
-                  className="block rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
+                  className="block rounded-full dark:text-[#e6e6e6] shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
                 >
                   <LinkedInIcon />
                 </a>
@@ -39,7 +37,7 @@ export default function Body() {
                   href="https://github.com/Aymenbachiri?tab=repositories"
                   target="_blank"
                   rel="noreferrer"
-                  className="block rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
+                  className="block rounded-full dark:text-[#e6e6e6] shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
                 >
                   <GithubIcon />
                 </a>
@@ -49,7 +47,7 @@ export default function Body() {
                   href="/"
                   target="_blank"
                   rel="noreferrer"
-                  className="block rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
+                  className="block rounded-full dark:text-[#e6e6e6] shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
                 >
                   <ResumeIcon />
                 </a>

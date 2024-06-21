@@ -4,17 +4,16 @@ import { useNavigation } from "@/lib/hooks/useNavigation";
 import Logo from "./Logo";
 import CloseBtn from "../ui/CloseBtn";
 import MobileNavList from "./MobileNavList";
-import LinkedInIcon from "@/lib/svg/LinkedInIcon";
-import GithubIcon from "@/lib/svg/GithubIcon";
 import MenuBtn from "../ui/MenuBtn";
 import ThemeSwitcher from "./ThemeSwitcher";
+import { GithubIcon, LinkedInIcon } from "@/lib/svg";
 
 export default function MobileNavbar() {
   const { nav, handleNav, setNav } = useNavigation();
   return (
     <>
       <MenuBtn handleNav={handleNav} />
-      <div className="absolute top-8 right-16 md:hidden">
+      <div className="absolute top-8 right-16 md:hidden dark:text-white">
         <ThemeSwitcher />
       </div>
       <section>
@@ -28,8 +27,8 @@ export default function MobileNavbar() {
           <div
             className={
               nav
-                ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-                : "fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+                ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-black p-10 ease-in duration-500"
+                : "fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-black p-10 ease-in duration-500"
             }
           >
             <div>
@@ -39,7 +38,7 @@ export default function MobileNavbar() {
                 <CloseBtn handleNav={handleNav} />
               </div>
               <div className="border-b border-gray-300 my-4">
-                <p className="w-[85%] md:w-[90%] py-4">
+                <p className="w-[85%] md:w-[90%] py-4 dark:text-[#e6e6e6]">
                   Let&#39;s build something legendary together
                 </p>
               </div>
@@ -51,10 +50,10 @@ export default function MobileNavbar() {
                   Let&#39;s Connect
                 </p>
                 <div className="flex justify-center gap-10 items-center my-4 w-full sm:w-[80%]">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg dark:text-[#e6e6e6] shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <LinkedInIcon />
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg dark:text-[#e6e6e6] shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <GithubIcon />
                   </div>
                 </div>

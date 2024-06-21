@@ -9,7 +9,7 @@ export default function MobileNavList({
   setNav: Dispatch<SetStateAction<boolean>>;
 }) {
   return (
-    <ul className="uppercase text-black">
+    <ul className="uppercase text-black dark:text-[#e6e6e6]">
       <ReusableLink href="#home">
         <li onClick={() => setNav(false)} className="py-4 text-sm">
           Home

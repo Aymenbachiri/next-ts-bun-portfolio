@@ -6,7 +6,7 @@ export default function CloseBtn({ handleNav }: { handleNav: () => void }) {
   return (
     <button
       onClick={handleNav}
-      className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+      className="rounded-full dark:text-[#e6e6e6] shadow-lg shadow-gray-400 p-3 cursor-pointer"
     >
       <CloseIcon />
     </button>

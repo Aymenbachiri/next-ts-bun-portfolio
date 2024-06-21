@@ -1,17 +1,10 @@
-"use client";
-
-import { useNavigation } from "@/lib/hooks/useNavigation";
 import ReusableLink from "../ui/ReusableLink";
 import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function LargeScreenNavList() {
-  const { linkColor } = useNavigation();
   return (
     <nav>
-      <ul
-        style={{ color: `${linkColor}` }}
-        className="hidden md:flex text-black"
-      >
+      <ul className="hidden md:flex text-black dark:text-[#e6e6e6]">
         <ReusableLink href="#home">
           <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
         </ReusableLink>

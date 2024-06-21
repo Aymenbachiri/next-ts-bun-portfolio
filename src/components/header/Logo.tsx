@@ -4,7 +4,7 @@ import ReusableLink from "../ui/ReusableLink";
 
 export default function Logo() {
   return (
-    <ReusableLink className="rounded-full" href="/#home">
+    <ReusableLink className="rounded-full" href="#home">
       <Image
         priority={true}
         className="rounded-full"
