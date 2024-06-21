@@ -53,7 +53,7 @@ export default function ContactForm() {
             <textarea
               className="border-2 rounded-lg p-3 border-gray-300"
               rows={10}
-              placeholder="write your message here, please add details!!"
+              placeholder="write your message here"
               {...register("message")}
             />
             {errors.message && (

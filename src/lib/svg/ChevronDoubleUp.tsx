@@ -3,7 +3,7 @@ export default function ChevronDoubleUp(props: React.SVGProps<SVGSVGElement>) {
     <svg
       stroke="currentColor"
       fill="none"
-      stroke-width="2"
+      strokeWidth="2"
       viewBox="0 0 24 24"
       aria-hidden="true"
       className="text-[#5651e5]"
@@ -13,8 +13,8 @@ export default function ChevronDoubleUp(props: React.SVGProps<SVGSVGElement>) {
       {...props}
     >
       <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         d="M5 11l7-7 7 7M5 19l7-7 7 7"
       ></path>
     </svg>

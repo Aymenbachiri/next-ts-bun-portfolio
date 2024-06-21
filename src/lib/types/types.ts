@@ -9,3 +9,9 @@ export type EmailTemplateProps = {
   subject: string;
   message: string;
 };
+
+export type searchResultsProps = {
+  name: string;
+  id: number;
+  image?: string;
+};
