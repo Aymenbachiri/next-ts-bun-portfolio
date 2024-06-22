@@ -51,6 +51,11 @@ export const SkillsList = [
     image: "/assets/images/skills-images/react-native-1.svg",
   },
   {
+    id: 70,
+    name: "Expo",
+    image: "/assets/images/skills-images/expo.svg",
+  },
+  {
     id: 12,
     name: "Next.js",
     image: "/assets/images/skills-images/nextjs_icon_dark.svg",
@@ -184,5 +189,18 @@ export const SkillsList = [
     id: 43,
     name: "React Hook Form",
     image: "/assets/images/skills-images/react-hook-form-logo-only.svg",
+  },
+  {
+    id: 44,
+    name: "Expo router",
+  },
+  {
+    id: 45,
+    name: "NativeWind",
+    image: "/assets/images/skills-images/NativeWind.webp",
+  },
+  {
+    id: 46,
+    name: "react-native-responsive-screen",
   },
 ];
