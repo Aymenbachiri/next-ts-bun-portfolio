@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import MernStackProjects from "./MernStackProjects";
 import ReactNativeProjects from "./ReactNativeProjects";
+import NextProjects from "./NextProjects";
+import AspDotNetCoreProjects from "./AspDotNetCoreProjects";
 
 const tabs = [
-  { name: "MERN Stack", content: <MernStackProjects /> },
-  { name: "React Native", content: <ReactNativeProjects /> },
+  { name: "Next.js", content: <NextProjects /> },
+  { name: "React Native Expo", content: <ReactNativeProjects /> },
+  { name: "Asp .Net Core", content: <AspDotNetCoreProjects /> },
 ];
 
 export default function ProjectsTab() {

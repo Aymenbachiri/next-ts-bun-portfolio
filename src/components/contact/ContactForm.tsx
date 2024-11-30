@@ -18,6 +18,7 @@ export default function ContactForm() {
                 className=" border-2 rounded-lg p-3 flex border-gray-300 dark:text-gray-300"
                 type="text"
                 placeholder="your name"
+                style={{ borderColor: errors.name ? "red" : "" }}
                 {...register("name")}
               />
               {errors.name && (
@@ -29,7 +30,8 @@ export default function ContactForm() {
             <label className="uppercase text-sm py-2">Email</label>
             <input
               className="border-2 rounded-lg p-3 flex border-gray-300"
-              placeholder="email@company.com"
+              placeholder="aymen.bachiri99@gmail.com"
+              style={{ borderColor: errors.email ? "red" : "" }}
               {...register("email")}
             />
             {errors.email && (
@@ -42,6 +44,7 @@ export default function ContactForm() {
               className="border-2 rounded-lg p-3 flex border-gray-300"
               type="text"
               placeholder="subject"
+              style={{ borderColor: errors.subject ? "red" : "" }}
               {...register("subject")}
             />
             {errors.subject && (
@@ -54,6 +57,7 @@ export default function ContactForm() {
               className="border-2 rounded-lg p-3 border-gray-300"
               rows={10}
               placeholder="write your message here"
+              style={{ borderColor: errors.message ? "red" : "" }}
               {...register("message")}
             />
             {errors.message && (

@@ -10,8 +10,8 @@ import {
 
 export default function Contact() {
   return (
-    <main id="contact" className="w-full h-full lg:pt-[150px]">
-      <div className="max-w-[1240px] m-auto px-2 w-full ">
+    <main id="contact" className="w-full h-full lg:pt-[150px] pb-10">
+      <div className="max-w-[1240px] m-auto px-2 w-full mb-10">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
         </p>
@@ -33,10 +33,13 @@ export default function Contact() {
               <div>
                 <h2 className="py-2">Aymen Bachiri</h2>
                 <p className="dark:text-gray-500">
-                  <span className="font-bold dark:text-white">MERN</span> Stack
+                  <span className="font-bold dark:text-white">Next.js</span> &{" "}
+                  <span className="font-bold dark:text-white">
+                    React Native Expo
+                  </span>{" "}
                   &{" "}
                   <span className="font-bold dark:text-white">
-                    React Native
+                    Asp .Net Core
                   </span>{" "}
                   Developer
                 </p>
