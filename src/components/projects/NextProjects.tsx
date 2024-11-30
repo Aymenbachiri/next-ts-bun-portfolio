@@ -6,7 +6,7 @@ export default function NextProjects() {
     {
       name: "One Jobs",
       image: "/assets/images/projects-images/OneJobs.webp",
-      url: "/",
+      url: "/one-jobs",
     },
     {
       name: "Penny Post",
