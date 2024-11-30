@@ -13,9 +13,9 @@ export default function Body() {
               Hi, I&#39;m <span className="text-[#5651e5]">Aymen</span>
             </h1>
             <h2 className="py-2 text-gray-700">
-              <span className="font- dark:text-white">MERN </span>
-              Stack &{" "}
-              <span className="font- dark:text-white">React Native </span>{" "}
+              <span className="font- dark:text-white">Next.js </span>-{" "}
+              <span className="font- dark:text-white">React Native Expo </span>-{" "}
+              <span className="font- dark:text-white">Asp .Net Core</span>{" "}
               Developer
             </h2>
             <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">

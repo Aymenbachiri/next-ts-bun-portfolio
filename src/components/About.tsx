@@ -11,26 +11,44 @@ export default function About() {
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <section className="col-span-2">
           <h1 className="uppercase text-xl text-center md:text-start tracking-widest text-[#5651e5]">
-            About
+            About Me
           </h1>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-500">
-            Hi there! I&apos;m Aymen, a passionate{" "}
-            <span className="font-bold dark:text-white">MERN</span> Stack &{" "}
-            <span className="font-bold dark:text-white">React Native</span>{" "}
-            developer with a background in mathematics. After studying for 3
-            years at École Normale Supérieure de Kouba with the intention of
-            becoming a math teacher, I made the exciting decision to pivot my
-            career towards web & mobile development. With a solid foundation in
-            mathematics, including an introduction course to algorithms in C,
-            and a newfound passion for coding, I now specialize in creating
-            exceptional user experiences through web and mobile development.
-            With a solid foundation in{" "}
+            Hello! I&apos;m Aymen, a passionate{" "}
+            <span className="font-bold dark:text-white">Full-Stack Web</span>{" "}
+            and{" "}
+            <span className="font-bold dark:text-white">Mobile Developer</span>{" "}
+            specializing in{" "}
             <span className="font-bold dark:text-white">Next.js</span>,{" "}
-            <span className="font-bold dark:text-white">Typescript</span> &{" "}
-            <span className="font-bold dark:text-white">React Native</span> ,
-            and a plethora of modern technologies, thrive in crafting dynamic
-            and responsive applications.
+            <span className="font-bold dark:text-white">React Native Expo</span>
+            , and{" "}
+            <span className="font-bold dark:text-white">ASP.NET Core</span>{" "}
+            development. My journey into tech started after studying mathematics
+            at École Normale Supérieure de Kouba, where I initially aspired to
+            become a math teacher. However, my love for problem-solving and
+            technology led me to pivot into web and mobile development.
+          </p>
+          <p className="py-2 text-gray-500">
+            With a strong foundation in{" "}
+            <span className="font-bold dark:text-white">mathematics</span> and
+            programming, including algorithms in C, I now focus on creating
+            dynamic, scalable, and responsive web and mobile applications. My
+            expertise spans modern technologies such as{" "}
+            <span className="font-bold dark:text-white">Next.js</span> for
+            server-side rendering,{" "}
+            <span className="font-bold dark:text-white">Typescript</span> for
+            type safety, and{" "}
+            <span className="font-bold dark:text-white">React Native Expo</span>{" "}
+            for cross-platform mobile development. Additionally, I am proficient
+            in building powerful APIs and back-end systems with{" "}
+            <span className="font-bold dark:text-white">ASP.NET Core</span>.
+          </p>
+          <p className="py-2 text-gray-500">
+            I am constantly learning and embracing new challenges, always
+            striving to improve the user experience and deliver high-quality,
+            maintainable code. My goal is to craft seamless, intuitive
+            applications that make a real impact.
           </p>
           <ReusableLink href="#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer">
@@ -44,7 +62,7 @@ export default function About() {
             width={450}
             height={450}
             className="rounded-xl"
-            alt="aymen bachiri image"
+            alt="Aymen Bachiri"
             loading="lazy"
             sizes="(min-width: 480px) 450px, calc(93.75vw + 19px)"
           />

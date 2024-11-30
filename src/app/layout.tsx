@@ -12,14 +12,15 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Aymen Bachiri | MERN Stack & React Native Developer",
+  title: "Aymen Bachiri | Next.js & React Native & Asp .Net Core Developer",
   description:
-    "Experienced MERN stack and React Native developer creating innovative web and mobile applications. Explore my portfolio to see how I can bring your ideas to life.",
+    "Experienced Next.js and React Native and Asp .Net Core developer creating innovative web and mobile applications. Explore my portfolio to see how I can bring your ideas to life.",
   keywords: [
-    "MERN stack",
+    "Next.js",
     "React Native",
     "Web Developer",
     "Mobile App Developer",
+    "Asp .Net Core",
     "JavaScript",
     "Node.js",
     "MongoDB",
@@ -32,27 +33,27 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.aymenbachiri.com", // Replace with your actual website URL
-    title: "Aymen Bachiri | MERN Stack & React Native Developer",
+    url: "https://www.aymenbachiri.com",
+    title: "Aymen Bachiri | Next.js & React Native & Asp .Net Core Developer",
     description:
-      "Experienced MERN stack and React Native developer creating innovative web and mobile applications.",
+      "Experienced Next.js and React Native and Asp .Net Core developer creating innovative web and mobile applications.",
     siteName: "Aymen Bachiri Portfolio",
     images: [
       {
-        url: "/assets/images/aymen-bachiri.webp", // Replace with the path to your Open Graph image
+        url: "/assets/images/aymen-bachiri.webp",
         width: 1200,
         height: 630,
-        alt: "Aymen Bachiri - MERN Stack & React Native Developer",
+        alt: "Aymen Bachiri - Next.js & React Native & Asp .Net Core Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aymen Bachiri | MERN Stack & React Native Developer",
+    title: "Aymen Bachiri | Next.js & React Native & Asp .Net Core Developer",
     description:
-      "Experienced MERN stack and React Native developer creating innovative web and mobile applications.",
-    images: ["https://www.aymenbachiri.com/twitter-image.jpg"], // Replace with the path to your Twitter card image
-    creator: "@AymenBachiri", // Replace with your Twitter handle
+      "Experienced Next.js & React Native & Asp .Net Core developer creating innovative web and mobile applications.",
+    images: ["https://www.aymenbachiri.com/twitter-image.jpg"],
+    creator: "@AymenBachiri",
   },
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",

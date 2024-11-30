@@ -32,6 +32,7 @@ export default function SkillsItems() {
                     height={64}
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="dark:bg-white dark:rounded-lg"
                   />
                 ) : null}
               </div>
