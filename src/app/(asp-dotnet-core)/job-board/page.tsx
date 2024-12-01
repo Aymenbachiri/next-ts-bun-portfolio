@@ -35,16 +35,16 @@ export default function Page() {
             <span className="font-semibold">Blog API</span> is a robust RESTful
             API designed for managing blog posts with a fully-fledged backend
             built on <strong>ASP .NET Core</strong>. The application uses{" "}
-            <strong>MongoDB</strong> for efficient data storage and utilizes{" "}
+            <strong>Supabase</strong> for efficient data storage and utilizes{" "}
             <strong>DTOs (Data Transfer Objects)</strong> for structured data
             exchange between layers. The project leverages a{" "}
-            <strong>MongoDBService</strong> for handling data operations,
+            <strong>SupabaseService</strong> for handling data operations,
             ensuring separation of concerns and better maintainability. The API
             is also <strong>Dockerized</strong>, enabling easy deployment and
             hosting in a containerized environment. Additionally, the project
-            integrates <strong>Swagger</strong> for interactive API
-            documentation, making it easier for developers to test and explore
-            the available API endpoints. This project demonstrates best
+            incorporates <strong>Swagger</strong> for generating interactive API
+            documentation, allowing developers to easily explore, test, and
+            interact with the API endpoints. This project demonstrates best
             practices in building a scalable, performant, and secure backend
             solution.
           </p>
@@ -52,7 +52,7 @@ export default function Page() {
           {/* Links Section */}
           <nav className="flex flex-col md:flex-row gap-4 mt-6">
             <a
-              href="https://github.com/Aymenbachiri/Blog-app-Backend"
+              href="https://github.com/Aymenbachiri/JobBoardBackend"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 mt-4 underline cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -61,7 +61,7 @@ export default function Page() {
               <LinkIcon />
             </a>
             <a
-              href="https://blog-app-backend-h2tz.onrender.com/api/posts"
+              href="https://jobboardbackend.up.railway.app/api/jobs"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 mt-4 underline cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -83,7 +83,7 @@ export default function Page() {
                 <BulletIcon className="pr-2 dark:text-gray-200" /> ASP .NET Core
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
-                <BulletIcon className="pr-2 dark:text-gray-200" /> MongoDB
+                <BulletIcon className="pr-2 dark:text-gray-200" /> Supabase
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
                 <BulletIcon className="pr-2 dark:text-gray-200" /> Swagger
@@ -96,7 +96,7 @@ export default function Page() {
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
                 <BulletIcon className="pr-2 dark:text-gray-200" />{" "}
-                MongoDBService
+                SupabaseService
               </p>
             </section>
           </div>

@@ -21,7 +21,7 @@ export default function Page() {
         {/* Heading Section */}
         <section className="absolute top-[70%] w-full left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-white z-10 px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold py-2 text-black dark:text-white">
-            Blog API
+            Ecommerce API
           </h2>
         </section>
       </div>
@@ -32,12 +32,12 @@ export default function Page() {
           <p className="text-gray-600 dark:text-gray-300">Project</p>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Overview</h2>
           <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-            <span className="font-semibold">Blog API</span> is a robust RESTful
-            API designed for managing blog posts with a fully-fledged backend
-            built on <strong>ASP .NET Core</strong>. The application uses{" "}
-            <strong>MongoDB</strong> for efficient data storage and utilizes{" "}
-            <strong>DTOs (Data Transfer Objects)</strong> for structured data
-            exchange between layers. The project leverages a{" "}
+            <span className="font-semibold">Ecommerce API</span> is a robust
+            RESTful API designed for managing ecommerce products with a
+            fully-fledged backend built on <strong>ASP .NET Core</strong>. The
+            application uses <strong>MongoDB</strong> for efficient data storage
+            and utilizes <strong>DTOs (Data Transfer Objects)</strong> for
+            structured data exchange between layers. The project leverages a{" "}
             <strong>MongoDBService</strong> for handling data operations,
             ensuring separation of concerns and better maintainability. The API
             is also <strong>Dockerized</strong>, enabling easy deployment and
@@ -52,7 +52,7 @@ export default function Page() {
           {/* Links Section */}
           <nav className="flex flex-col md:flex-row gap-4 mt-6">
             <a
-              href="https://github.com/Aymenbachiri/Blog-app-Backend"
+              href="https://github.com/Aymenbachiri/ecommerce-app-backend"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 mt-4 underline cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -61,7 +61,7 @@ export default function Page() {
               <LinkIcon />
             </a>
             <a
-              href="https://blog-app-backend-h2tz.onrender.com/api/posts"
+              href="https://ecommerce-app-backend.up.railway.app/api/products"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 mt-4 underline cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors"

@@ -38,12 +38,14 @@ export default function Page() {
             <strong>MongoDB</strong> for efficient data storage and utilizes{" "}
             <strong>DTOs (Data Transfer Objects)</strong> for structured data
             exchange between layers. The project leverages a{" "}
-            <strong>MongoDBService </strong>
-            for handling data operations, ensuring separation of concerns and
-            better maintainability. The API is also <strong>Dockerized</strong>,
-            enabling easy deployment and hosting in a containerized environment.
-            This project demonstrates best practices in building a scalable,
-            performant, and secure backend solution.
+            <strong>MongoDBService</strong> for handling data operations,
+            ensuring separation of concerns and better maintainability. The API
+            is also <strong>Dockerized</strong>, enabling easy deployment and
+            hosting in a containerized environment. Additionally, the project
+            integrates <strong>Swagger</strong> to provide an interactive API
+            documentation interface, making it easier for developers to explore
+            and test the API endpoints. This project demonstrates best practices
+            in building a scalable, performant, and secure backend solution.
           </p>
 
           {/* Links Section */}
@@ -81,6 +83,9 @@ export default function Page() {
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
                 <BulletIcon className="pr-2 dark:text-gray-200" /> MongoDB
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
+                <BulletIcon className="pr-2 dark:text-gray-200" /> Swagger
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
                 <BulletIcon className="pr-2 dark:text-gray-200" /> DTOs
