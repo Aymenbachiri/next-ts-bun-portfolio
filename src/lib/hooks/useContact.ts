@@ -17,27 +17,24 @@ export const useContact = () => {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    try {
-      const res = await fetch("/api/send", {
-        method: "POST",
-        body: JSON.stringify(data),
-      });
+    await toast.promise(
+      (async () => {
+        const res = await fetch("/api/send", {
+          method: "POST",
+          body: JSON.stringify(data),
+        });
 
-      if (res.ok) {
-        toast.success("Message sent successfully , I will reply soon!");
+        if (!res.ok) {
+          throw new Error("Something went wrong, please try again later.");
+        }
         reset();
-      } else {
-        toast.error("Something went wrong, please try again later.");
+      })(),
+      {
+        loading: "Sending your message...",
+        success: "Message sent successfully, I will reply soon!",
+        error: "An error occurred. Please try again later.",
       }
-    } catch (error) {
-      if (error instanceof Error) {
-        console.error(error.message);
-        toast.error(error.message);
-      } else {
-        console.error("An unknown error occurred. Please try again later.");
-        toast.error("An unknown error occurred. Please try again later.");
-      }
-    }
+    );
   };
 
   return {
