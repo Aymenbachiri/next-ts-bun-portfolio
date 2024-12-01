@@ -31,7 +31,7 @@ export default function NextProjects() {
   ];
 
   return (
-    <main className="flex flex-col md:flex-row justify-center gap-4 items-center h-auto w-full">
+    <main className="grid grid-cols-2 md:flex md:flex-row justify-center gap-4 items-center h-auto w-full">
       {nextProjects.map((proejct) => (
         <div
           key={proejct.name}

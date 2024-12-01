@@ -6,7 +6,7 @@ export default function About() {
   return (
     <main
       id="about"
-      className="w-full h-full p-2 flex items-center mb-[350px] lg:mb-[150px]"
+      className="w-full h-full p-2 flex items-center mb-[550px] lg:mb-[150px]"
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <section className="col-span-2">

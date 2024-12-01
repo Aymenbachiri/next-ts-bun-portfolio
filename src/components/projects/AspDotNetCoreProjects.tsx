@@ -22,7 +22,7 @@ export default function AspDotNetCoreProjects() {
   ];
 
   return (
-    <main className="flex flex-col md:flex-row justify-center gap-4 items-center h-auto w-full">
+    <main className="grid grid-cols-2 md:flex md:flex-row justify-center gap-4 items-center h-auto w-full">
       {aspDotNetCoreProjects.map((project) => (
         <div
           key={project.name}
