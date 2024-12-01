@@ -11,22 +11,22 @@ export default function NextProjects() {
     {
       name: "Penny Post",
       image: "/assets/images/projects-images/PennyPost.webp",
-      url: "/",
+      url: "/penny-post",
     },
     {
       name: "Easy Shop",
       image: "/assets/images/projects-images/EasyShop.webp",
-      url: "/",
+      url: "/easy-shop",
     },
     {
       name: "Task Tide",
       image: "/assets/images/projects-images/TaskTide.webp",
-      url: "/",
+      url: "/task-tide",
     },
     {
       name: "Shop Base",
       image: "/assets/images/projects-images/ShopBase.webp",
-      url: "/",
+      url: "/shop-base",
     },
   ];
 

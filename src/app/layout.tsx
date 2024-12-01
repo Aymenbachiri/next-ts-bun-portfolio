@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/header/Navbar";
-import SmoothScrollingProvider from "@/lib/providers/SmoothScrollingProvider";
+import { LenisScrollProvider } from "@/lib/providers/SmoothScrollingProvider";
 import { Providers } from "@/lib/providers/ThemeProvider";
 import { Toaster } from "react-hot-toast";
 
@@ -67,13 +67,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={raleway.className}>
-        <SmoothScrollingProvider>
-          <Providers>
-            <Navbar />
-            {children}
-            <Toaster />
-          </Providers>
-        </SmoothScrollingProvider>
+        <Providers>
+          <LenisScrollProvider />
+          <Navbar />
+          {children}
+          <Toaster />
+        </Providers>
       </body>
     </html>
   );

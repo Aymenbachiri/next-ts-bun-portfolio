@@ -12,16 +12,16 @@ export default function Page() {
 
         <Image
           className="absolute z-0 object-cover"
-          src="/assets/images/projects-images/OneJobs.webp"
-          alt="Job Board Application Interface"
+          src="/assets/images/projects-images/TaskTide.webp"
+          alt="Blog App Interface"
           layout="fill"
           objectFit="cover"
         />
 
         {/* Heading Section */}
         <section className="absolute top-[70%] w-full left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-white z-10 px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold py-2">
-            Job Board Application
+          <h2 className="text-3xl sm:text-4xl font-bold py-2 text-black dark:text-white">
+            Task Manager App
           </h2>
         </section>
       </div>
@@ -32,37 +32,43 @@ export default function Page() {
           <p className="text-gray-600 dark:text-gray-300">Project</p>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Overview</h2>
           <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-            <span className="font-semibold">Job Board Application</span> is a
-            comprehensive full-stack web application designed to streamline job
-            searching and posting. Built with <strong>Next.js</strong> for the
-            frontend, <strong>ASP.NET Core</strong> for the backend, and powered
-            by <strong>Supabase</strong> as the database, the application offers
-            a robust and modern solution for job seekers and employers. Key
-            features include <strong>secure authentication</strong> with{" "}
-            <strong>Clerk</strong>, responsive design with{" "}
-            <strong>dark and light mode</strong> support, and a smooth,
-            interactive user interface. The application leverages{" "}
-            <strong>Tailwind CSS</strong> for styling, <strong>Zod</strong> and{" "}
-            <strong>react-hook-form</strong> for comprehensive form validation,
-            and <strong>Lenis</strong> for smooth scrolling.{" "}
-            <strong>Server-only</strong> middleware ensures secure server
-            actions, while <strong>nextjs-toploader</strong> provides dynamic
-            loading indicators and <strong>Sonner</strong> delivers elegant
-            toast notifications. The project implements advanced{" "}
-            <strong>SEO</strong>
-            capabilities, including custom SEO titles and descriptions for each
-            page, dynamically generated Open Graph images to enhance social
-            media sharing, and a comprehensive <strong>sitemap</strong> to
-            improve search engine indexing and discoverability. The project
-            demonstrates a modern web development approach, combining
-            performance, security, and an intuitive user experience across
-            multiple technologies.
+            <span className="font-semibold">Task Tide</span> is a robust,
+            full-stack task management application designed to streamline
+            productivity and enhance personal organization. Built with{" "}
+            <strong>Next.js</strong> for the frontend and{" "}
+            <strong>ASP.NET Core</strong> for the backend, the application
+            leverages <strong>Supabase</strong> as the powerful database
+            solution and <strong>Kinde</strong> for secure authentication. The
+            project features a comprehensive task management ecosystem with
+            intuitive user experience and advanced tracking capabilities. The
+            application prioritizes <strong>Search Engine Optimization</strong>{" "}
+            with custom SEO titles, descriptions, and Open Graph images for each
+            page, complemented by a detailed <strong>sitemap</strong> to enhance
+            discoverability. Styled with <strong>Tailwind CSS</strong>, the
+            application offers a responsive design with seamless{" "}
+            <strong>dark and light mode</strong> support using{" "}
+            <strong>next-themes</strong>. Powered by{" "}
+            <strong>React Hook Form</strong> and <strong>Zod</strong> for robust
+            form validation, Task Tide ensures data integrity and smooth user
+            interactions. <strong>Framer Motion</strong> adds dynamic, engaging
+            animations that make the user interface fluid and interactive. The
+            application incorporates <strong>Recharts</strong> to provide
+            insightful data visualizations of task completion and productivity
+            metrics.
+            <strong>Nextjs-toploader</strong> enhances perceived performance
+            with dynamic loading indicators, while <strong>Sonner</strong>{" "}
+            provides unobtrusive, elegant notifications to keep users informed
+            about their tasks and actions. The project demonstrates a modern web
+            development approach, seamlessly integrating cutting-edge
+            technologies to create a performant, secure, and user-friendly task
+            management platform that transforms how users organize and track
+            their daily activities.
           </p>
 
           {/* Links Section */}
           <nav className="flex flex-col md:flex-row gap-4 mt-6">
             <a
-              href="https://github.com/Aymenbachiri/JobOne"
+              href="https://github.com/Aymenbachiri/TaskTide"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 mt-4 underline cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -71,7 +77,7 @@ export default function Page() {
               <LinkIcon />
             </a>
             <a
-              href="https://onejobs.vercel.app"
+              href="https://tasktidepro.vercel.app"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 mt-4 underline cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -99,7 +105,10 @@ export default function Page() {
                 <BulletIcon className="pr-2 dark:text-gray-200" /> Supabase
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
-                <BulletIcon className="pr-2 dark:text-gray-200" /> Clerk
+                <BulletIcon className="pr-2 dark:text-gray-200" /> kinde
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
+                <BulletIcon className="pr-2 dark:text-gray-200" /> Framer Motion
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
                 <BulletIcon className="pr-2 dark:text-gray-200" /> Tailwind CSS
