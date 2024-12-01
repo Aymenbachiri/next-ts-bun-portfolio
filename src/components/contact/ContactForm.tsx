@@ -66,7 +66,7 @@ export default function ContactForm() {
           </div>
           <button
             type="submit"
-            className="w-full p-4 text-black dark:text-gray-300 mt-4"
+            className="w-full p-4 text-black dark:border dark:text-gray-300 mt-4"
           >
             Send Message
           </button>
