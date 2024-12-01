@@ -1,14 +1,35 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  ReactNode,
+  Dispatch,
+  SetStateAction,
+} from "react";
 import { usePathname } from "next/navigation";
-import type { NavigationContextProps } from "../types/NavigationContextProps";
 
-const NavigationContext = createContext<NavigationContextProps | undefined>(
+// Define the type for the context value
+interface NavigationContextValue {
+  nav: boolean;
+  shadow: boolean;
+  navBg: string;
+  linkColor: string;
+  handleNav: () => void;
+}
+
+// Explicitly type the context with NavigationContextValue or null for uninitialized state
+const NavigationContext = createContext<NavigationContextValue | undefined>(
   undefined
 );
 
-export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({
+interface NavigationProviderProps {
+  children: ReactNode;
+}
+
+export const NavigationProvider: React.FC<NavigationProviderProps> = ({
   children,
 }) => {
   const [nav, setNav] = useState(false);
@@ -50,10 +71,11 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({
   );
 };
 
-export const useNavbar = () => {
+// Hook to use the NavigationContext with type safety
+export const useNavbar = (): NavigationContextValue => {
   const context = useContext(NavigationContext);
   if (context === undefined) {
-    throw new Error("useNavigation must be used within a NavigationProvider");
+    throw new Error("useNavbar must be used within a NavigationProvider");
   }
   return context;
 };
