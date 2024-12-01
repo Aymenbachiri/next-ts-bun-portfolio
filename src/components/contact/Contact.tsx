@@ -82,7 +82,11 @@ export default function Contact() {
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://drive.google.com/file/d/1RTAxPYqm7Nohctx_YMvjH_QSrHzhwsS9/view"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="rounded-full dark:text-white shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <ResumeIcon />
                       </div>
