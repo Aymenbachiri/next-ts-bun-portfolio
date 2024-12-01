@@ -32,6 +32,9 @@ export default function Contact() {
               </div>
               <div>
                 <h2 className="py-2">Aymen Bachiri</h2>
+                <h2 className="my-4 dark:text-white font-sans">
+                  +213(697286826)
+                </h2>
                 <p className="dark:text-gray-500">
                   <span className="font-bold dark:text-white">Next.js</span> &{" "}
                   <span className="font-bold dark:text-white">

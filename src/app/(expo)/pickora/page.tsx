@@ -12,7 +12,7 @@ export default function Page() {
 
         <Image
           className="absolute z-0 object-cover"
-          src="/assets/images/projects-images/ShopBase.webp"
+          src="/assets/images/projects-images/Pickora.jpg"
           alt="Blog App Interface"
           layout="fill"
           objectFit="cover"
@@ -32,53 +32,43 @@ export default function Page() {
           <p className="text-gray-600 dark:text-gray-300">Project</p>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Overview</h2>
           <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-            <span className="font-semibold">ShopBase</span> is a comprehensive
-            full-stack e-commerce application designed to deliver a modern,
-            performant online shopping experience. Built with{" "}
-            <strong>Next.js</strong> for the frontend and{" "}
-            <strong>Express.js</strong> for the backend, the application is
+            <span className="font-semibold">Pickora</span> is a cutting-edge
+            mobile e-commerce application designed to deliver a modern,
+            performant shopping experience on mobile devices. Built with{" "}
+            <strong>React Native Expo</strong> for the frontend and{" "}
+            <strong>ASP.NET Core</strong> for the backend, the application is
             powered by <strong>Redux Toolkit</strong> for state management and{" "}
             <strong>MongoDB</strong> as the robust database solution. The
-            project is secured with <strong>NextAuth</strong> authentication,
+            project is secured with <strong>Clerk</strong> authentication,
             ensuring a seamless and secure user experience. Key features include{" "}
-            <strong>responsive design</strong> with{" "}
-            <strong>dark and light mode</strong> support using{" "}
-            <strong>next-themes</strong>, and an interactive, fluid user
-            interface. The application leverages <strong>Tailwind CSS</strong>{" "}
-            for elegant styling, <strong>Zod</strong> and{" "}
-            <strong>react-hook-form</strong> for comprehensive form validation,
-            and <strong>Framer Motion</strong> for adding dynamic, engaging
-            animations that enhance user interactions. A standout feature of
-            ShopBase is its multilingual support, implemented using{" "}
-            <strong>next-intl</strong>, offering seamless translation across{" "}
-            <strong>Arabic</strong>, <strong>English</strong>, and{" "}
-            <strong>French</strong>, making the platform accessible to a global
-            audience. <strong>Google reCAPTCHA</strong> adds an additional layer
-            of security, protecting the application from automated bot
-            interactions.
-            <strong>React Hot Toast</strong> provides clean, unobtrusive
-            notifications to keep users informed about their actions, while{" "}
-            <strong>Lenis</strong> ensures smooth scrolling and{" "}
-            <strong>nextjs-toploader</strong> offers dynamic loading indicators
-            to improve perceived performance. The project prioritizes{" "}
-            <strong>Search Engine Optimization</strong> with custom SEO titles,
-            descriptions, and Open Graph images for each page, complemented by a
-            comprehensive <strong>sitemap</strong> to enhance discoverability
-            and search engine indexing. The use of{" "}
+            <strong>responsive mobile design</strong> with{" "}
+            <strong>dark and light mode</strong> support, providing users with a
+            versatile and visually appealing interface. The application
+            leverages <strong>NativeWind</strong> for elegant styling,
+            seamlessly integrating Tailwind CSS principles into the React Native
+            ecosystem. <strong>Zod</strong> and <strong>react-hook-form</strong>{" "}
+            provide comprehensive form validation, ensuring data integrity and
+            smooth user interactions. The mobile app utilizes a rich set of Expo
+            features, including <strong>Expo Fonts</strong> for custom
+            typography, and <strong>Expo Secure Store</strong> for secure local
+            storage. <strong>React Navigation</strong> enables smooth,
+            native-feeling navigation between screens, while{" "}
+            <strong>Expo Router</strong> provides a modern routing solution for
+            the application.
             <strong>Redux Persist</strong> ensures persistent state management,
-            allowing for a seamless shopping experience across user sessions.
-            Security is further enhanced with <strong>Helmet.js</strong> and{" "}
-            <strong>bcrypt</strong> for robust backend protection. The project
-            demonstrates a modern web development approach, seamlessly
-            integrating multiple cutting-edge technologies to create a
-            performant, secure, and user-friendly e-commerce platform that
-            offers an exceptional digital shopping experience.
+            allowing for a seamless shopping experience across user sessions.{" "}
+            The project demonstrates a modern mobile development approach,
+            seamlessly integrating multiple cutting-edge technologies to create
+            a performant, secure, and user-friendly e-commerce platform that
+            offers an exceptional mobile shopping experience. With support for
+            multiple platforms and a focus on user experience, Pickora
+            represents the future of mobile e-commerce applications.
           </p>
 
           {/* Links Section */}
           <nav className="flex flex-col md:flex-row gap-4 mt-6">
             <a
-              href="https://github.com/Aymenbachiri/ShopBase"
+              href="https://github.com/Aymenbachiri/Pickora"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 mt-4 underline cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -87,12 +77,12 @@ export default function Page() {
               <LinkIcon />
             </a>
             <a
-              href="https://shop-base-eight.vercel.app"
+              href="https://drive.google.com/file/d/1ZZJz7PMYUXeNbU8Ay44jemlqSBrD6NBE/view"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 mt-4 underline cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
-              <h2 className="text-xl font-semibold">Demo</h2>
+              <h2 className="text-xl font-semibold">Download</h2>
               <LinkIcon />
             </a>
           </nav>
@@ -106,25 +96,23 @@ export default function Page() {
             </p>
             <section className="grid grid-cols-3 sm:grid-cols-1 gap-4">
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
-                <BulletIcon className="pr-2 dark:text-gray-200" /> Next.js
+                <BulletIcon className="pr-2 dark:text-gray-200" /> React Native
+                Expo
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
-                <BulletIcon className="pr-2 dark:text-gray-200" /> Express.js
+                <BulletIcon className="pr-2 dark:text-gray-200" /> ASP.NET Core
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
                 <BulletIcon className="pr-2 dark:text-gray-200" /> MongoDB
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
-                <BulletIcon className="pr-2 dark:text-gray-200" /> NextAuth
+                <BulletIcon className="pr-2 dark:text-gray-200" /> Clerk
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
                 <BulletIcon className="pr-2 dark:text-gray-200" /> Redux Toolkit
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
-                <BulletIcon className="pr-2 dark:text-gray-200" /> Tailwind CSS
-              </p>
-              <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
-                <BulletIcon className="pr-2 dark:text-gray-200" /> Next-Intl
+                <BulletIcon className="pr-2 dark:text-gray-200" /> NativeWind
               </p>
             </section>
           </div>

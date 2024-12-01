@@ -17,7 +17,7 @@ export default function ReactNativeProjects() {
             Pickora
           </h3>
           <p className="pb-4 pt-2 text-white text-center">Expo</p>
-          <ReusableLink href="">
+          <ReusableLink href="/pickora">
             <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
               More Info
             </p>
@@ -37,7 +37,7 @@ export default function ReactNativeProjects() {
             NoteFlow
           </h3>
           <p className="pb-4 pt-2 text-white text-center">Expo</p>
-          <ReusableLink href="">
+          <ReusableLink href="/note-flow">
             <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
               More Info
             </p>

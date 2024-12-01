@@ -4,20 +4,20 @@ import ReusableLink from "../ui/ReusableLink";
 export default function AspDotNetCoreProjects() {
   const aspDotNetCoreProjects = [
     {
-      name: "Blog App Backend",
-      url: "/",
+      name: "Blog API",
+      url: "/blog",
     },
     {
-      name: "Task Manager Backend",
-      url: "/",
+      name: "Task Manager API",
+      url: "/task-manager",
     },
     {
-      name: "Job Board Backend",
-      url: "/",
+      name: "Job Board API",
+      url: "/job-board",
     },
     {
-      name: "Ecommerce Backend",
-      url: "/",
+      name: "Ecommerce API",
+      url: "/ecommerce",
     },
   ];
 

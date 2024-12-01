@@ -12,8 +12,8 @@ export default function Page() {
 
         <Image
           className="absolute z-0 object-cover"
-          src="/assets/images/projects-images/EasyShop.webp"
-          alt="Blog App Interface"
+          src="/assets/images/skills-images/asp.net-core.webp"
+          alt="Blog API Interface"
           layout="fill"
           objectFit="cover"
         />
@@ -21,7 +21,7 @@ export default function Page() {
         {/* Heading Section */}
         <section className="absolute top-[70%] w-full left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-white z-10 px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold py-2 text-black dark:text-white">
-            Ecommerce App
+            Blog API
           </h2>
         </section>
       </div>
@@ -32,46 +32,24 @@ export default function Page() {
           <p className="text-gray-600 dark:text-gray-300">Project</p>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Overview</h2>
           <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-            <span className="font-semibold">
-              Full Stack E-Commerce Application
-            </span>{" "}
-            is a comprehensive web platform designed to deliver a modern,
-            performant online shopping experience. Built with{" "}
-            <strong>Next.js</strong> for the frontend and{" "}
-            <strong>ASP.NET Core</strong> for the backend, the application is
-            powered by <strong>Redux Toolkit</strong> for state management and{" "}
-            <strong>MongoDB</strong> as the database. The project is secured
-            with <strong>Clerk</strong> authentication, ensuring a seamless and
-            secure user experience. Key features include{" "}
-            <strong>responsive design</strong> with{" "}
-            <strong>dark and light mode</strong> support using{" "}
-            <strong>next-themes</strong>, and an interactive, fluid user
-            interface. The application leverages <strong>Tailwind CSS</strong>{" "}
-            for elegant styling, <strong>Zod</strong> and{" "}
-            <strong>react-hook-form</strong> for comprehensive form validation,
-            and <strong>Framer Motion</strong> for adding dynamic, engaging
-            animations that enhance user interactions.{" "}
-            <strong>React Hot Toast</strong> provides clean, unobtrusive
-            notifications to keep users informed about their actions, while{" "}
-            <strong>Lenis</strong> ensures smooth scrolling and{" "}
-            <strong>nextjs-toploader</strong> offers dynamic loading indicators
-            to improve perceived performance. The project prioritizes{" "}
-            <strong>Search Engine Optimization</strong> with custom SEO titles,
-            descriptions, and Open Graph images for each page, complemented by a
-            comprehensive <strong>sitemap</strong> to enhance discoverability
-            and search engine indexing. The use of{" "}
-            <strong>Redux Persist</strong> ensures persistent state management,
-            allowing for a seamless shopping experience across user sessions.
-            The project demonstrates a modern web development approach,
-            seamlessly integrating multiple cutting-edge technologies to create
-            a performant, secure, and user-friendly e-commerce platform that
-            offers an exceptional digital shopping experience.
+            <span className="font-semibold">Blog API</span> is a robust RESTful
+            API designed for managing blog posts with a fully-fledged backend
+            built on <strong>ASP .NET Core</strong>. The application uses{" "}
+            <strong>MongoDB</strong> for efficient data storage and utilizes{" "}
+            <strong>DTOs (Data Transfer Objects)</strong> for structured data
+            exchange between layers. The project leverages a{" "}
+            <strong>MongoDBService </strong>
+            for handling data operations, ensuring separation of concerns and
+            better maintainability. The API is also <strong>Dockerized</strong>,
+            enabling easy deployment and hosting in a containerized environment.
+            This project demonstrates best practices in building a scalable,
+            performant, and secure backend solution.
           </p>
 
           {/* Links Section */}
           <nav className="flex flex-col md:flex-row gap-4 mt-6">
             <a
-              href="https://github.com/Aymenbachiri/EasyShop"
+              href="https://github.com/Aymenbachiri/Blog-app-Backend"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 mt-4 underline cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -80,7 +58,7 @@ export default function Page() {
               <LinkIcon />
             </a>
             <a
-              href="https://easyshop1.vercel.app"
+              href="https://blog-app-backend-h2tz.onrender.com/api/posts"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 mt-4 underline cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -99,22 +77,20 @@ export default function Page() {
             </p>
             <section className="grid grid-cols-3 sm:grid-cols-1 gap-4">
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
-                <BulletIcon className="pr-2 dark:text-gray-200" /> Next.js
-              </p>
-              <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
-                <BulletIcon className="pr-2 dark:text-gray-200" /> ASP.NET Core
+                <BulletIcon className="pr-2 dark:text-gray-200" /> ASP .NET Core
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
                 <BulletIcon className="pr-2 dark:text-gray-200" /> MongoDB
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
-                <BulletIcon className="pr-2 dark:text-gray-200" /> Clerk
+                <BulletIcon className="pr-2 dark:text-gray-200" /> DTOs
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
-                <BulletIcon className="pr-2 dark:text-gray-200" /> Redux Toolkit
+                <BulletIcon className="pr-2 dark:text-gray-200" /> Docker
               </p>
               <p className="text-gray-600 dark:text-gray-300 py-2 flex items-center">
-                <BulletIcon className="pr-2 dark:text-gray-200" /> Tailwind CSS
+                <BulletIcon className="pr-2 dark:text-gray-200" />{" "}
+                MongoDBService
               </p>
             </section>
           </div>
