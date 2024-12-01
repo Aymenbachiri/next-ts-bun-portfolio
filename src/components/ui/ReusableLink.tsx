@@ -1,6 +1,6 @@
 "use client";
 
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { MouseEventHandler, useCallback } from "react";
