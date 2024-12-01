@@ -83,7 +83,7 @@ export default function Contact() {
                   </li>
                   <li>
                     <a
-                      href="https://drive.google.com/file/d/1RTAxPYqm7Nohctx_YMvjH_QSrHzhwsS9/view"
+                      href="https://drive.google.com/file/d/1nzfOPtaEeuuz4_8v4O_RGzDWBXxtqzXU/view"
                       target="_blank"
                       rel="noreferrer"
                     >
